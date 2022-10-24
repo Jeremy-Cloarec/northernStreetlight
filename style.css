@@ -155,3 +155,49 @@ nav{
 	justify-content:center;
 	text-align: center;
 }
+
+h2{
+	color: #D72424;
+	font-size: 58px;
+}
+
+p{
+	font-size: 23px;
+	text-align: left;
+}
+
+.nosValeurs p{
+	margin-top:30px;
+}
+
+
+/* NOS COURS */
+
+.nosCours{
+	background-color: #EFEFEF;
+	padding:10% 8%;
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+.containerCard{
+	display:grid;
+	grid-template:1fr/repeat(3,1fr);
+	column-gap: 15px;
+	margin-top: 30px;
+}
+
+.cardNosCours{
+	background-color: white;
+	display: grid;
+	grid-template:auto auto auto auto auto/auto;
+	row-gap:15px; 
+	padding: 30px;
+	border-radius: 30px;
+}
+
+h3{
+	text-align: center;
+}
+
