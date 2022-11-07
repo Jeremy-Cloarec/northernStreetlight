@@ -140,8 +140,9 @@ nav{
 
 /*MAIN*/
 
-.container{
-	width: 60%;
+.description{
+	max-width: 800px;
+	text-align: center;
 }
 
 /* NOS VALEURS */
@@ -185,7 +186,8 @@ p{
 	display:grid;
 	grid-template:1fr/repeat(3,1fr);
 	column-gap: 25px;
-	margin: 50px 0;
+	margin-top: 60px;
+	max-width:1200px ;
 }
 
 .cardNosCours{
@@ -207,7 +209,7 @@ h3{
 	color: #D72424;
 }
 
-.cardNosCours p{
+.descriptionCours{
 	font-size: 16px;
 }
 
@@ -257,7 +259,82 @@ h3{
 	display: flex;
 	flex-direction:column;
 	align-items:center;
-	padding: 10% 8%;
+	padding: 10% 8% 10% 8%;
+}
+@media screen and (max-width: 1300px){
+	.nosEnseignants{
+		padding:10% 8% 15% 8% ;
+	}
+}
+@media screen and (max-width: 850px){
+	.nosEnseignants{
+		padding:10% 8% 20% 8% ;
+	}
+}
+
+
+.nosEnseignantsDeux{	
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+	background-color: #EFEFEF;
+	padding: 0 8%;
+}
+
+.containerEnseignants{
+	display:grid;
+	grid-template:1fr/repeat(3,1fr);
+	column-gap: 25px;
+	max-width:1200px;
+	position: relative;
+	bottom: 130px;
+}
+
+.enseignantsCards{
+	display: grid;
+	grid-template:auto /auto;
+	row-gap:25px; 
+	border-radius: 30px;
+}
+
+.enseignantsCards img{
+	width: 160px;
+	height: auto;
+}
+
+.enseignantsAlignement{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+
+.descriptionEnseignants{
+	display: grid;
+	grid-template:auto /auto;
+	row-gap:15px; 
+	background-color: white;
+	padding: 30px;
+	border-radius: 50px;
+	
+}
+
+h3{
+	font-size: 28px;
+	color: #D72424;
+}
+
+.nosEnseignants .description{
+ padding: 50px 0;
+}
+
+.titre{
+	text-align: center;
+}
+
+.nosEnseignantsDeux h2{
+	margin-bottom: 80px;
 }
 
 
