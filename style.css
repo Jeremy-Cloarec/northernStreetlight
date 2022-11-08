@@ -326,7 +326,7 @@ h3{
 }
 
 .nosEnseignants .description{
- padding: 50px 0;
+    padding: 50px 0;
 }
 
 .titre{
@@ -338,3 +338,45 @@ h3{
 }
 
 
+/* NOS TARIFS */
+
+.nosTarifs{
+	margin: 80px 0;
+}
+
+.containerNosTarifs{
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	column-gap: 25px;
+	max-width: 980px;
+}
+
+.nosTarifsCards{
+	display: grid;
+	row-gap: 15px;
+	background-color: #EFEFEF;
+	padding: 30px;
+	border-radius: 50px;
+
+}
+
+
+
+
+.descriptionTarifs{
+	display: grid;
+	row-gap: 15px;
+}
+
+.iconesTarifs{
+	display: flex;
+}
+
+.nomForfaitTarifs > p,h4 {
+	text-align: center;
+}
+
+.prixTarifs > p {
+	text-align: center;
+}
