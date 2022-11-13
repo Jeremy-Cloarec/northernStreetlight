@@ -341,7 +341,7 @@ h3{
 /* NOS TARIFS */
 
 .nosTarifs{
-	margin: 80px 0;
+	margin: 80px 0 160px 0;
 }
 
 .containerNosTarifs{
@@ -349,20 +349,38 @@ h3{
 	display: grid;
 	grid-template-columns: repeat(3,1fr);
 	column-gap: 25px;
-	max-width: 980px;
+	max-width: 900px;
 }
 
 .nosTarifsCards{
-	display: grid;
-	row-gap: 15px;
-	background-color: #EFEFEF;
-	padding: 30px;
+	box-shadow: 0px 4px 16px rgba(26, 26, 26, 0.16);
 	border-radius: 50px;
-
 }
 
 
+.nosTarifsCards h4{
+	font-size: 22px;
+	margin-bottom: 5px;
+}
 
+.nosTarifsCards p{
+	font-size: 16px;	
+}
+
+.nomForfaitTarifs{
+	background-color: #FFE4E4;
+	padding: 20px 0;
+	border-radius: 50px 50px 0 0;
+}
+
+.basCards{
+	padding: 15px 30px 30px 30px;
+	border-radius: 0 0 50px 50px;
+}
+
+.nomForfaitTarifs > p,h4 {
+	text-align: center;
+}
 
 .descriptionTarifs{
 	display: grid;
@@ -371,12 +389,31 @@ h3{
 
 .iconesTarifs{
 	display: flex;
+	align-items:center;
+}
+.iconesTarifs p{
+	margin-left: 10px;
 }
 
-.nomForfaitTarifs > p,h4 {
-	text-align: center;
+.material-symbols-outlined{
+	color: #1a1a1aad;
 }
 
 .prixTarifs > p {
 	text-align: center;
+}
+.traitTarifs{
+	background-color:#1a1a1aad;
+	height: 1px;
+	
+}
+
+.prixTarifs p:first-child{
+	color: #D72424;
+	font-size: 50px;
+}
+
+.prixTarifs p:last-child{
+	font-weight: 500;
+	margin-bottom: 15px;
 }
