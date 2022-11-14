@@ -417,3 +417,22 @@ h3{
 	font-weight: 500;
 	margin-bottom: 15px;
 }
+
+/*CONTACT*/
+
+.containerContact{
+	display: flex;
+	flex-direction:column;
+	padding: 0 8%;
+}
+
+.containerContact h2{
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+.crayons{
+	display: grid;
+	grid-template-columns: 50px auto 50px; 
+	max-width:1200px;
+}
