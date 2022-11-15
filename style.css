@@ -423,7 +423,9 @@ h3{
 .containerContact{
 	display: flex;
 	flex-direction:column;
+	margin: auto;
 	padding: 0 8%;
+	max-width: 800px;
 }
 
 .containerContact h2{
@@ -431,8 +433,37 @@ h3{
 	margin-bottom: 80px;
 }
 
-.crayons{
-	display: grid;
-	grid-template-columns: 50px auto 50px; 
-	max-width:1200px;
+
+
+.crayonsFlex{
+	display: flex;
+	justify-content :space-between;
+}
+
+
+
+.formulaire {
+	background-color: red;
+	flex:1;
+	display: flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+
+.formulaire input{
+	width:100%;
+}
+
+.formulaire textarea{
+	width:100%;
+	height: 80px;
+}
+
+.nomPrenom{
+	display: flex;	
+}
+
+.nomPrenom p{
+	flex:1;
 }

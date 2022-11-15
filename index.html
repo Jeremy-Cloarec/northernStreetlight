@@ -232,15 +232,35 @@
       <section class="contactezNous">
 		  <div class="containerContact">
 			  <h2>Contactez-Nous</h2>
-			  <div class="crayons">
+			  <div class="crayons crayonsFlex">
 				  <img src="img/crayon1.png" alt="#"/>
-				  <div class="formulaire">
-				  </div>
+				  <form class="formulaire formulaireGri" method="post" action="#">
+					  <fieldset class="nomPrenom">
+						  <p>
+							 <input type="text" name="nom" id="nom" placeholder="Votre Nom" />
+						  </p>
+						  <p>
+							 <input type="text" name="prenom" id="prenom" placeholder="Votre prénom"/>
+						  </p> 
+				      </fieldset>
+					  <p>
+						 <input type="text" name="objet" id="objet" placeholder="Objet"/>
+					  </p>
+					  <p>
+						 <input type="email" placeholder="Votre mail"/>
+					  </p>
+					  <p>
+						 <textarea name="message" id="message" placeholder="Votre message"></textarea>
+				  	  </p>
+					  <p>
+					  	<input type="submit" value="Envoyer"/>
+				      </p>
+				  </form>
 				  <img src="img/crayon2.png" alt="#"/>
 			  </div>
 		  </div>
       </section>
-  </main>
+  </main>	
 
     <script>
       src="https://kit.fontawesome.com/3c3a356350.js"
