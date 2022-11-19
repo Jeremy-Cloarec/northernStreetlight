@@ -455,8 +455,9 @@ h3{
 
 
 .formulaire input{
-	color: #D72424;
-	font-size: 16px;
+	color: rgba(26, 26, 26);
+	font-size: 24px;
+	text-align: center;
 	width: 100%;
 	height: 40px;
 	padding-left:10px;
@@ -470,9 +471,8 @@ h3{
 .formulaire textarea{
 	width:100%;
 	height: 200px;
-	font-size: 16px;
-	padding-left:10px;
-	padding-top: 10px;
+	font-size: 24px;
+	padding:10px 30px;
 	margin-bottom: 20px;
 	box-sizing: border-box;
 	border: #D72424 solid 2px;
@@ -497,3 +497,22 @@ h3{
 .nomPrenom p:last-child{
 	margin-left: 5px;
 }
+
+.boutonEnvoyer{
+	background-color:#D72424;
+	border: none;
+	outline: none;
+}
+.boutonEnvoyer:hover{
+	background-color:#7D1515;
+	border: none;
+	outline: none;
+}
+.boutonE input{
+	color: white;
+	font-weight: 400;
+	width: 150px;
+}
+
+
+
