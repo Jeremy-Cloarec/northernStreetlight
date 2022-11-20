@@ -109,7 +109,7 @@ nav{
     background-color: #D72424;
     border: none;
 	transition : 0.3s;
-	margin-top: 30px;
+	margin-top: 60px;
 }
 
 .decouvrezNosCours:hover{
@@ -168,7 +168,7 @@ p{
 }
 
 .nosValeurs p{
-	margin-top:30px;
+	margin-top:60px;
 }
 
 
@@ -197,6 +197,7 @@ p{
 	row-gap:15px; 
 	padding: 25px;
 	border-radius: 30px;
+	box-shadow: 0px 4px 16px rgba(26, 26, 26, 0.16);
 }
 
 h3{
@@ -317,6 +318,7 @@ h3{
 	background-color: white;
 	padding: 30px;
 	border-radius: 50px;
+	box-shadow: 0px 4px 16px rgba(26, 26, 26, 0.16);
 	
 }
 
@@ -356,6 +358,19 @@ h3{
 .nosTarifsCards{
 	box-shadow: 0px 4px 16px rgba(26, 26, 26, 0.16);
 	border-radius: 50px;
+}
+
+.nosTarifsCardsDeux .nomForfaitTarifs{
+	background-color: #D72424;
+	color: white;
+}
+
+.nosTarifsCardsDeux .nomForfaitTarifs h4{
+	color: white;
+}
+
+.nosTarifsCardsDeux .nomForfaitTarifs p{
+	color: white;
 }
 
 
@@ -589,3 +604,102 @@ footer h4{
 	color:#D72424;
 }
 
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 520px){
+	
+	.affichageAccueil h1{
+		font-size: 35px;
+	}
+
+	h2{
+		font-size: 28px;
+	}
+
+	.cardNosCours h3{
+		font-size: 22px;
+	}
+
+	p{
+		font-size: 16px;
+	}
+	
+	nav{
+		flex-wrap: wrap;
+	}
+
+	.logoNorthern img{
+		width: 120px;
+	}
+
+
+	.menu{
+		flex-wrap: wrap;
+	}
+
+	.menu li a{
+		font-size: 14px;
+	}
+
+	header{
+		height: 50vh;
+	}
+
+	.affichageAccueil{
+		height: 30vh;
+	}
+
+	.decouvrezNosCours{
+		margin-top:38px;
+	}
+
+	.decouvrezNosCours a{
+		font-size: 16px;
+	}
+
+	.souriePicto{
+		display: none;
+	}
+
+	.nosValeurs{
+		padding: 10% 5%;
+	}
+
+	.nosValeurs p{
+		margin-top: 38px;
+	}
+
+	.nosCours{
+		padding: 10% 10%;
+	}
+
+	.containerCard{
+		grid-template: repeat(3,1fr)/1fr;
+		gap: 15px 0px;
+		margin-top: 38px;
+	}
+
+	.descriptionCours{
+		font-size: 12px;
+	}
+
+	.buttonCard{
+		font-size: 12px;
+	}
+
+	.containerEnseignants{
+		grid-template: repeat(3,1fr)/1fr;
+		gap: 60px 0;
+		bottom: 98px;
+	}
+
+	.enseignantsCards{
+		row-gap: 10px;
+	}
+	.enseignantsCards img{
+		width: 120px;
+		
+
+	}
+}
