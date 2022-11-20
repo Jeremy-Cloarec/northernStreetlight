@@ -524,6 +524,68 @@ p.boutonE{
 	align-self: flex-start;
 }
 
+/*FOOTER*/
 
+footer{
+	padding:40px 5%;
+	background-color:#EFEFEF;
+}
 
+footer p{
+	font-size: 16px;
+}
+
+footer h4{
+	text-align: left;
+	margin-bottom: 15px;
+}
+
+.sectionUnFooter{
+	display: flex;
+	justify-content:space-between;
+	align-items:start;
+	margin-bottom: 20px;	
+}
+
+.sectionDeuxFooter{
+	display: flex;
+	align-items:center;
+}
+
+.sectionDeuxFooterGrid{
+	dipplay:grid;
+	column-gap: 45px;
+}
+
+.fa-brands{
+	font-size: 35px;
+	transition: transform 0.5s;
+}
+
+.fa-brands:hover{
+	color:#D72424;
+	transform: scale(1.3);
+	
+}
+
+.fa-instagram{
+	padding-right:10px;
+}
+
+.adresseFooter p:last-child {
+	margin-top:8px;
+	text-decoration: underline;
+}
+
+.adresseFooter p a:last-child:hover{
+	color:#D72424;
+} 
+
+.planFooter a:hover{
+	color: #D72424;
+}
+ 
+.sectionDeuxFooter a:hover {
+	color:#D72424;
+}
 
