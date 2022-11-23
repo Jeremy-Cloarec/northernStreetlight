@@ -17,9 +17,9 @@ h1,h2, h3{
 
 /* MENU */
 
-#burger{
+ #burger{
 	display: none;
-}
+} 
 
 header{
     background-image:url("img/bgLampadaire.png");
@@ -613,16 +613,22 @@ footer h4{
 
 @media screen and (max-width: 520px){
 	
+	.affichageAccueil{
+		height: auto;
+		padding-top:80px;
+		padding-bottom: 120px;
+	}
+	
 	.affichageAccueil h1{
-		font-size: 35px;
+		font-size: 32px;
 	}
 
 	h2{
-		font-size: 28px;
+		font-size: 26px;
 	}
 
 	.cardNosCours h3{
-		font-size: 22px;
+		font-size: 20px;
 	}
 
 	p{
@@ -631,10 +637,11 @@ footer h4{
 	
 	nav{
 		flex-wrap: wrap;
+		
 	}
 
 	.logoNorthern img{
-		width: 120px;
+		width: 90px;
 	}
 
 
@@ -646,20 +653,19 @@ footer h4{
 		font-size: 14px;
 	}
 
-	header{
-		height: 500px;
-	}
-
-	.affichageAccueil{
-		height: 300px;
-	}
-
+ header{
+		height:auto;
+	} 
+	
 	.decouvrezNosCours{
 		margin-top:38px;
+		padding:13px 0 13px 0; 
+		width: 100%;
 	}
 
 	.decouvrezNosCours a{
 		font-size: 16px;
+		padding
 	}
 
 	.souriePicto{
@@ -698,6 +704,10 @@ footer h4{
 		bottom: 98px;
 	}
 
+	.nosEnseignantsDeux h2{
+		margin-bottom: 30px;
+	}
+
 	.enseignantsCards{
 		row-gap: 10px;
 	}
@@ -705,10 +715,21 @@ footer h4{
 		width: 120px;
 	}
 
+	.nosTarifs{
+		margin: 30px 0 80px 0;
+	}
+
 	.containerNosTarifs{
 		grid-template: repeat(3,1fr)/1fr;
 		gap: 60px 0;
 		max-width: 300px;	
+	}
+
+	.contactezNous{
+		margin-bottom: 80px;
+	}
+	.contactezNous h2{
+		margin-bottom: 40px;
 	}
 
 	.crayonsFlex{
@@ -722,9 +743,12 @@ footer h4{
 	.formulaire{
 		margin: 0;
 		width: 100%;
-		padding: ;
-	
+		padding: px 0;
 	}
+
+
+
+
 
 	.formulaire input{
 		font-size: 16px;
@@ -738,6 +762,10 @@ footer h4{
 
 	.nomPrenom p:last-child{
 		margin: 0;
+	}
+
+	.boutonE{
+		width: 100%;
 	}
 
 	.sectionUnFooter p, .sectionDeuxFooter p{
@@ -758,46 +786,58 @@ footer h4{
 	.sectionDeuxFooter{
 		column-gap: 0;
 		
-
 	}
+
+	
+
 	.sectionDeuxFooter a, .sectionDeuxFooter p{
 		flex: 1;
 		text-align: center;
-
 	}
 
 	/* MENU BURGER */
 
+
 	#barre{
 		color: white;
-		font-size: 28px;
+		font-size: 20px;
+		margin-top: 3px;
+	}
+	
+
+    .navbar{
+		
+		overflow: hidden;
+		max-height: 0;
+		width: 100%;
+		background-color: #0c0c0c;
+		flex-direction: column;
+		margin-top: 15px;
 	}
 
-	.navbar{
-
+	.navbar ul{
+		flex-direction: column;
+		text-align: center;
+		padding: 15px 0;
+		
 	}
 
 	.menu{
-		flex-direction: column;
-		align-items: center;
-		
-	}
-	.menu-icon{
-		position:relative;
-		top: 5px;
-		left: 60px ;
+		flex-wrap: nowrap;
 	}
 
-	nav ul{
-		max-height: 0;
-		overflow: hidden;
+	.menu li a{
+		font-size: 18px;
+	}
+	
+	#burger:checked~.navbar {
+	max-height: 300px;
+	
 	}
 
-	#burger:checked~.navbar{
-		max-height: 300px;
-	}
-
-	#burger{
-		width: 30px;
-	}
+	#burger:checked~#barre {
+	top: 300px;
+	
+	} 
+	
 }
