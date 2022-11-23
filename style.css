@@ -17,6 +17,10 @@ h1,h2, h3{
 
 /* MENU */
 
+#burger{
+	display: none;
+}
+
 header{
     background-image:url("img/bgLampadaire.png");
     height: 100vh;
@@ -643,11 +647,11 @@ footer h4{
 	}
 
 	header{
-		height: 50vh;
+		height: 500px;
 	}
 
 	.affichageAccueil{
-		height: 30vh;
+		height: 300px;
 	}
 
 	.decouvrezNosCours{
@@ -699,7 +703,101 @@ footer h4{
 	}
 	.enseignantsCards img{
 		width: 120px;
+	}
+
+	.containerNosTarifs{
+		grid-template: repeat(3,1fr)/1fr;
+		gap: 60px 0;
+		max-width: 300px;	
+	}
+
+	.crayonsFlex{
+		flex-direction: column;
+		align-items: center;
+	}
+	.crayonsFlex img{
+		display: none;
+	}
+
+	.formulaire{
+		margin: 0;
+		width: 100%;
+		padding: ;
+	
+	}
+
+	.formulaire input{
+		font-size: 16px;
+	}
+	.formulaire textarea {
+		font-size: 16px;
+	}
+	fieldset{
+		flex-direction: column;
+	}
+
+	.nomPrenom p:last-child{
+		margin: 0;
+	}
+
+	.sectionUnFooter p, .sectionDeuxFooter p{
+		font-size: 12px;
+	}
+	.sectionUnFooter{
+		flex-direction: column;
+	}
+	footer h4{
+		margin-top: 30px;
+	}
+
+	.sectionDeuxFooter img{
+		height: auto;
+		width: 100px;
+	}
+
+	.sectionDeuxFooter{
+		column-gap: 0;
 		
 
+	}
+	.sectionDeuxFooter a, .sectionDeuxFooter p{
+		flex: 1;
+		text-align: center;
+
+	}
+
+	/* MENU BURGER */
+
+	#barre{
+		color: white;
+		font-size: 28px;
+	}
+
+	.navbar{
+
+	}
+
+	.menu{
+		flex-direction: column;
+		align-items: center;
+		
+	}
+	.menu-icon{
+		position:relative;
+		top: 5px;
+		left: 60px ;
+	}
+
+	nav ul{
+		max-height: 0;
+		overflow: hidden;
+	}
+
+	#burger:checked~.navbar{
+		max-height: 300px;
+	}
+
+	#burger{
+		width: 30px;
 	}
 }
