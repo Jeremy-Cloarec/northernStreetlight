@@ -283,7 +283,7 @@ h3{
 	flex-direction:column;
 	align-items:center;
 	background-color: #EFEFEF;
-	padding: 0 8%;
+	padding: 0 10%;
 }
 
 .containerEnseignants{
@@ -448,7 +448,7 @@ h3{
 	display: flex;
 	flex-direction:column;
 	margin: auto;
-	padding: 0 8%;
+	padding: 0 5%;
 	max-width: 940px;
 }
 
@@ -626,7 +626,7 @@ footer h4{
 	h2{
 		font-size: 26px;
 	}
-
+	
 	.cardNosCours h3{
 		font-size: 20px;
 	}
@@ -719,6 +719,10 @@ footer h4{
 		margin: 30px 0 80px 0;
 	}
 
+	.nosTarifsCards h4{
+		font-size: 18px;
+	}
+
 	.containerNosTarifs{
 		grid-template: repeat(3,1fr)/1fr;
 		gap: 60px 0;
@@ -745,10 +749,6 @@ footer h4{
 		width: 100%;
 		padding: px 0;
 	}
-
-
-
-
 
 	.formulaire input{
 		font-size: 16px;
@@ -813,6 +813,7 @@ footer h4{
 		background-color: #0c0c0c;
 		flex-direction: column;
 		margin-top: 15px;
+		transition: max-height 0.5s;
 	}
 
 	.navbar ul{
@@ -824,6 +825,7 @@ footer h4{
 
 	.menu{
 		flex-wrap: nowrap;
+
 	}
 
 	.menu li a{
@@ -835,9 +837,14 @@ footer h4{
 	
 	}
 
-	#burger:checked~#barre {
-	top: 300px;
+	/* padding containers */
+
+
 	
-	} 
+
+	/* BURGER */
+
+
+
 	
 }
