@@ -17,6 +17,18 @@ h1,h2, h3{
 
 /* MENU */
 
+ #burger{
+	display: none;
+} 
+
+.navigationBg{
+	display:none;
+}
+
+.navigationIcon{
+	display: none;
+}
+
 header{
     background-image:url("img/bgLampadaire.png");
     height: 100vh;
@@ -149,7 +161,7 @@ nav{
 
 
 .nosValeurs{
-	padding:10% 8%; 
+	padding:10% 5%; 
 	display: flex;
 	flex-direction:column;
 	align-items:center;
@@ -179,7 +191,7 @@ p{
 	display: flex;
 	flex-direction:column;
 	align-items:center;
-	padding: 10% 8%;
+	padding: 10% 5%;
 }
 
 .containerCard{
@@ -260,7 +272,7 @@ h3{
 	display: flex;
 	flex-direction:column;
 	align-items:center;
-	padding: 10% 8% 10% 8%;
+	padding: 10% 5% 10% 5%;
 }
 @media screen and (max-width: 1300px){
 	.nosEnseignants{
@@ -279,7 +291,7 @@ h3{
 	flex-direction:column;
 	align-items:center;
 	background-color: #EFEFEF;
-	padding: 0 8%;
+	padding: 0 5%;
 }
 
 .containerEnseignants{
@@ -352,7 +364,7 @@ h3{
 	grid-template-columns: repeat(3,1fr);
 	column-gap: 25px;
 	max-width: 900px;
-	padding: 0 8%;
+	padding: 0 5%;
 }
 
 .nosTarifsCards{
@@ -444,7 +456,7 @@ h3{
 	display: flex;
 	flex-direction:column;
 	margin: auto;
-	padding: 0 8%;
+	padding: 0 5%;
 	max-width: 940px;
 }
 
@@ -546,6 +558,10 @@ footer{
 	background-color:#EFEFEF;
 }
 
+.adresseFooter, .horaireFooter, .planFooter{
+	margin-right: 15px;
+}
+
 footer p{
 	font-size: 16px;
 }
@@ -565,11 +581,6 @@ footer h4{
 .sectionDeuxFooter{
 	display: flex;
 	align-items:center;
-}
-
-.sectionDeuxFooterGrid{
-	dipplay:grid;
-	column-gap: 45px;
 }
 
 .fa-brands{
@@ -604,21 +615,160 @@ footer h4{
 	color:#D72424;
 }
 
+.sectionDeuxFooter img,
+.sectionDeuxFooter p{
+	margin-right: 25px;
+}
 
-/* RESPONSIVE */
+
+
+/* RESPONSIVE TABLETTE*/
+
+@media screen and (min-width:520px) and (max-width:980px) {
+	
+	
+	.nosEnseignants{
+		padding-bottom:25%;
+	}
+	.containerEnseignants{
+		grid-template: repeat(3,1fr)/1fr;
+		row-gap: 5%;
+		bottom:160px;
+	}
+
+	.enseignantsCards{
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.enseignantsCards img{
+		margin-right: 5%;
+	}
+
+	.containerNosTarifs{
+		grid-template: ;
+	}
+
+	
+
+
+
+
+	/* BURGER TABLETTE */
+	nav{
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	.navigationIcon{
+		height:2px;
+		width: 23px;
+		background-color: white;
+		display: block;
+		transition: transform 0.5s, background-color 0.3s;
+	}
+
+	.navigationIcon:first-child{
+		margin-bottom: 5px;
+	}
+	.navigationIcon:last-child{
+		margin-top: 5px;
+	}
+
+	.menu-icon{
+		cursor: pointer;
+		margin-top:3px
+	}
+
+
+    .navbar{
+		
+		overflow: hidden;
+		max-height: 0;
+		width: 100%;
+		background-color: #0c0c0c;
+		flex-direction: column;
+		margin-top:8px;
+	}
+
+	.navbar ul{
+		flex-direction: column;
+		text-align: center;
+		padding: 15px 0;
+		
+	}
+
+	.menu{
+		flex-wrap: nowrap;
+	}
+
+	.menu li a{
+		font-size: 18px;
+	}
+	
+	#burger:checked~.navbar {
+	max-height: 300px;
+	
+	}
+
+	#burger:checked~.menu-icon .navigationIcon:first-child {
+	transform: rotate(45deg);
+	margin: 0;
+	position: relative;
+	top:2px;	
+	
+	}
+
+	#burger:checked~.menu-icon .navigationIcon:last-child {
+	transform: rotate(-45deg);
+	margin:0;
+	position: relative;
+	top:-2px;
+	
+	}
+
+	#burger:checked~.menu-icon .navigationIcon:nth-child(2) {
+	background-color: transparent;
+	}
+	
+}
+
+/* TABLETTE RESPONSIVE CARSD */
+
+@media screen and (min-width:520px) and (max-width:900px){
+	.containerCard{
+		grid-template: repeat(3,1fr)/1fr;
+		row-gap: 35px;
+	}
+
+}
+
+
+
+
+
+/* RESPONSIVE PHONE*/
 
 @media screen and (max-width: 520px){
 	
+	.affichageAccueil{
+		height: auto;
+		padding-top:80px;
+		padding-bottom: 120px;
+		
+	}
+	
 	.affichageAccueil h1{
-		font-size: 35px;
+		font-size: 32px;
 	}
 
 	h2{
-		font-size: 28px;
+		font-size: 26px;
 	}
 
 	.cardNosCours h3{
-		font-size: 22px;
+		font-size: 20px;
 	}
 
 	p{
@@ -627,10 +777,11 @@ footer h4{
 	
 	nav{
 		flex-wrap: wrap;
+		
 	}
 
 	.logoNorthern img{
-		width: 120px;
+		width: 90px;
 	}
 
 
@@ -642,20 +793,23 @@ footer h4{
 		font-size: 14px;
 	}
 
-	header{
-		height: 50vh;
-	}
+ header{
+		height:auto;
+	} 
 
-	.affichageAccueil{
-		height: 30vh;
+	.titreH1{
+		width: 100%;
 	}
-
+	
 	.decouvrezNosCours{
 		margin-top:38px;
+		padding:13px 0 13px 0; 
+		width: 100%;
 	}
 
 	.decouvrezNosCours a{
 		font-size: 16px;
+
 	}
 
 	.souriePicto{
@@ -671,7 +825,7 @@ footer h4{
 	}
 
 	.nosCours{
-		padding: 10% 10%;
+		padding: 10% 5%;
 	}
 
 	.containerCard{
@@ -694,12 +848,175 @@ footer h4{
 		bottom: 98px;
 	}
 
+	.nosEnseignantsDeux h2{
+		margin-bottom: 30px;
+	}
+
 	.enseignantsCards{
 		row-gap: 10px;
 	}
 	.enseignantsCards img{
 		width: 120px;
-		
-
 	}
+
+	.nosTarifs{
+		margin: 30px 0 80px 0;
+	}
+
+	.containerNosTarifs{
+		grid-template: repeat(3,1fr)/1fr;
+		gap: 60px 0;
+		max-width: 300px;	
+	}
+
+	.contactezNous{
+		margin-bottom: 80px;
+	}
+	.contactezNous h2{
+		margin-bottom: 40px;
+	}
+
+	.crayonsFlex{
+		flex-direction: column;
+		align-items: center;
+	}
+	.crayonsFlex img{
+		display: none;
+	}
+
+	.formulaire{
+		margin: 0;
+		width: 100%;
+		padding: px 0;
+	}
+
+
+
+
+
+	.formulaire input{
+		font-size: 16px;
+	}
+	.formulaire textarea {
+		font-size: 16px;
+	}
+	fieldset{
+		flex-direction: column;
+	}
+
+	.nomPrenom p:last-child{
+		margin: 0;
+	}
+
+	.boutonE{
+		width: 100%;
+	}
+
+	.sectionUnFooter p, .sectionDeuxFooter p{
+		font-size: 12px;
+	}
+	.sectionUnFooter{
+		flex-direction: column;
+	}
+	footer h4{
+		margin-top: 30px;
+	}
+
+	.sectionDeuxFooter img{
+		height: auto;
+		width: 100px;
+	}
+
+	.sectionDeuxFooter{
+		column-gap: 0;
+		
+	}
+
+	
+
+	.sectionDeuxFooter a, .sectionDeuxFooter p{
+		flex: 1;
+		text-align: center;
+	}
+
+	/* MENU BURGER */
+
+
+	/* #barre{
+		color: white;
+		font-size: 20px;
+		margin-top: 3px;
+	}  */
+
+	.navigationIcon{
+		height:2px;
+		width: 23px;
+		background-color: white;
+		display: block;
+		transition: transform 0.5s, background-color 0.3s;
+	}
+
+	.navigationIcon:first-child{
+		margin-bottom: 5px;
+	}
+	.navigationIcon:last-child{
+		margin-top: 5px;
+	}
+
+	.menu-icon{
+		cursor: pointer;
+		margin-top:3px
+	}
+
+
+    .navbar{
+		
+		overflow: hidden;
+		max-height: 0;
+		width: 100%;
+		background-color: #0c0c0c;
+		flex-direction: column;
+		margin-top:8px;
+	}
+
+	.navbar ul{
+		flex-direction: column;
+		text-align: center;
+		padding: 15px 0;
+		
+	}
+
+	.menu{
+		flex-wrap: nowrap;
+	}
+
+	.menu li a{
+		font-size: 18px;
+	}
+	
+	#burger:checked~.navbar {
+	max-height: 300px;
+	
+	}
+
+	#burger:checked~.menu-icon .navigationIcon:first-child {
+	transform: rotate(45deg);
+	margin: 0;
+	position: relative;
+	top:2px;	
+	
+	}
+
+	#burger:checked~.menu-icon .navigationIcon:last-child {
+	transform: rotate(-45deg);
+	margin:0;
+	position: relative;
+	top:-2px;
+	
+	}
+
+	#burger:checked~.menu-icon .navigationIcon:nth-child(2) {
+	background-color: transparent;
+	}
+
 }
