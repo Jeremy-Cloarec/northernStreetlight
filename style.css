@@ -21,7 +21,6 @@ h1,h2, h3{
 	display: none;
 } 
 
-<<<<<<< HEAD
 .navigationBg{
 	display:none;
 }
@@ -30,8 +29,7 @@ h1,h2, h3{
 	display: none;
 }
 
-=======
->>>>>>> 4151ef2050c94f8284435429d269c180a1633c9a
+
 header{
     background-image:url("img/bgLampadaire.png");
     height: 100vh;
@@ -294,11 +292,8 @@ h3{
 	flex-direction:column;
 	align-items:center;
 	background-color: #EFEFEF;
-<<<<<<< HEAD
 	padding: 0 5%;
-=======
 	padding: 0 10%;
->>>>>>> 4151ef2050c94f8284435429d269c180a1633c9a
 }
 
 .containerEnseignants{
@@ -653,15 +648,6 @@ footer h4{
 		margin-right: 5%;
 	}
 
-	.containerNosTarifs{
-		grid-template: ;
-	}
-
-	
-
-
-
-
 	/* BURGER TABLETTE */
 	nav{
 		flex-wrap: wrap;
@@ -763,10 +749,6 @@ footer h4{
 		height: auto;
 		padding-top:80px;
 		padding-bottom: 120px;
-<<<<<<< HEAD
-		
-=======
->>>>>>> 4151ef2050c94f8284435429d269c180a1633c9a
 	}
 	
 	.affichageAccueil h1{
@@ -806,13 +788,10 @@ footer h4{
  header{
 		height:auto;
 	} 
-<<<<<<< HEAD
 
 	.titreH1{
 		width: 100%;
 	}
-=======
->>>>>>> 4151ef2050c94f8284435429d269c180a1633c9a
 	
 	.decouvrezNosCours{
 		margin-top:38px;
@@ -822,11 +801,6 @@ footer h4{
 
 	.decouvrezNosCours a{
 		font-size: 16px;
-<<<<<<< HEAD
-
-=======
-		padding
->>>>>>> 4151ef2050c94f8284435429d269c180a1633c9a
 	}
 
 	.souriePicto{
@@ -874,7 +848,6 @@ footer h4{
 	}
 	.enseignantsCards img{
 		width: 120px;
-<<<<<<< HEAD
 	}
 
 	.nosTarifs{
@@ -1008,123 +981,6 @@ footer h4{
 		flex-wrap: nowrap;
 	}
 
-=======
-	}
-
-	.nosTarifs{
-		margin: 30px 0 80px 0;
-	}
-
-	.nosTarifsCards h4{
-		font-size: 18px;
-	}
-
-	.containerNosTarifs{
-		grid-template: repeat(3,1fr)/1fr;
-		gap: 60px 0;
-		max-width: 300px;	
-	}
-
-	.contactezNous{
-		margin-bottom: 80px;
-	}
-	.contactezNous h2{
-		margin-bottom: 40px;
-	}
-
-	.crayonsFlex{
-		flex-direction: column;
-		align-items: center;
-	}
-	.crayonsFlex img{
-		display: none;
-	}
-
-	.formulaire{
-		margin: 0;
-		width: 100%;
-		padding: px 0;
-	}
-
-	.formulaire input{
-		font-size: 16px;
-	}
-	.formulaire textarea {
-		font-size: 16px;
-	}
-	fieldset{
-		flex-direction: column;
-	}
-
-	.nomPrenom p:last-child{
-		margin: 0;
-	}
-
-	.boutonE{
-		width: 100%;
-	}
-
-	.sectionUnFooter p, .sectionDeuxFooter p{
-		font-size: 12px;
-	}
-	.sectionUnFooter{
-		flex-direction: column;
-	}
-	footer h4{
-		margin-top: 30px;
-	}
-
-	.sectionDeuxFooter img{
-		height: auto;
-		width: 100px;
-	}
-
-	.sectionDeuxFooter{
-		column-gap: 0;
-		
-	}
-
-	
-
-	.sectionDeuxFooter a, .sectionDeuxFooter p{
-		flex: 1;
-		text-align: center;
-	}
-
-	/* MENU BURGER */
-
-
-	#barre{
-		color: white;
-		font-size: 20px;
-		margin-top: 3px;
-	}
-	
-
-    .navbar{
-		
-		overflow: hidden;
-		max-height: 0;
-		width: 100%;
-		background-color: #0c0c0c;
-		flex-direction: column;
-		margin-top: 15px;
-		transition: max-height 0.5s;
-	}
-
-	.navbar ul{
-		flex-direction: column;
-		text-align: center;
-		padding: 15px 0;
-		
-	}
-
-	.menu{
-		flex-wrap: nowrap;
-
-	}
-
->>>>>>> 4151ef2050c94f8284435429d269c180a1633c9a
 	.menu li a{
 		font-size: 18px;
 	}
@@ -1134,7 +990,6 @@ footer h4{
 	
 	}
 
-<<<<<<< HEAD
 	#burger:checked~.menu-icon .navigationIcon:first-child {
 	transform: rotate(45deg);
 	margin: 0;
@@ -1155,16 +1010,4 @@ footer h4{
 	background-color: transparent;
 	}
 
-=======
-	/* padding containers */
-
-
-	
-
-	/* BURGER */
-
-
-
-	
->>>>>>> 4151ef2050c94f8284435429d269c180a1633c9a
 }
