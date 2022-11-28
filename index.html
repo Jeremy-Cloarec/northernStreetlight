@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Northern Streetlight</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/logoFavicon.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://kit.fontawesome.com/3c3a356350.js"
       crossorigin="anonymous"></script>
@@ -16,10 +17,11 @@
 
     <header>
       <nav>
-        <div class="logoNorthern">
-          <img src="img/logoNorthern.png" alt="#" />
+        <div class="logoNorthern" id="logo">
+          <a href="#">
+            <img src="img/logoNorthern.png" alt="#" />
+          </a>
         </div>
-
         <input type="checkbox" id="burger">
         <label for="burger" class="menu-icon">
           <!-- <i id="barre" class="fa-solid fa-bars"></i> -->
@@ -30,34 +32,31 @@
         <div class="navbar">
           <ul class="menu">
             <li>
-              <a href="#">Accueil</a>
+              <a href="#logo">Accueil</a>
             </li>
             <li>
-              <a href="#">Nos cours </a>
+              <a href="#nosCours">Nos cours </a>
             </li>
             <li>
-              <a href="#">Nos enseignants </a>
+              <a href="#notreEquipe">Nos enseignants </a>
             </li>
             <li>
-              <a href="#">Tarifs </a>
+              <a href="#tarifs">Tarifs </a>
             </li>
             <li>
-              <a href="#">Contactez-nous </a>
+              <a href="#containerContact">Contactez-nous </a>
             </li>
           </ul>
         </div>
       </nav>
-
-
-
-
-
       <div class="affichageAccueil">
         <div class="titreH1">
           <h1>Éclairez votre génie</h1>
-          <button class="decouvrezNosCours">
-            <a href="#">Découvrez nos cours </a>
-          </button>
+          <a class="decouvrez" href="#nosCours">
+            <button class="decouvrezNosCours">
+            Découvrez nos cours 
+            </button>
+          </a>
         </div>
         <div class="souriePicto">
           <img class="sourie" src="img/sourie.png" alt="#" />
@@ -70,12 +69,14 @@
             <h2>Nos valeurs</h2>
             <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius sapien at pulvinar iaculis. Vestibulum nec luctus odio. In in maximus nibh, vel facilisis turpis. Curabitur luctus euismod turpis a vestibulum.</p>
             <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius sapien at pulvinar iaculis. Vestibulum nec luctus odio. In in maximus nibh, vel facilisis turpis. Curabitur luctus euismod turpis a vestibulum.</p>
-            <button class="decouvrezNosCours">
-              <a href="#">Rencontrez notre équipe</a>
-            </button>
+            <a href="#notreEquipe"> 
+              <button class="decouvrezNosCours">
+              Rencontrez notre équipe
+              </button>
+            </a>
         </div>
       </section>
-      <section class="nosCours">
+      <section class="nosCours" id="nosCours">
         <h2>Nos cours</h3>
         <div class="containerCard">
           <div class="cardNosCours">
@@ -83,64 +84,70 @@
             <div class="imageCardUn"></div>
             <p class="descriptionCours">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius sapien at pulvinar iaculis. Vestibulum nec luctus odio. </p>
             <p class="horaires descriptionCours"><strong>Lundi et vendredi : 18h-20h</strong></p>
-            <button class="buttonCard">Contactez-nous</button>
+            <a href="#containerContact"><button class="buttonCard">Contactez-nous</button></a>
           </div>
           <div class="cardNosCours">
-            <h3>Modèle vivant</h3>
+            <h3>Illustration</h3>
             <div class="imageCardDeux"></div>
             <p class="descriptionCours">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius sapien at pulvinar iaculis. Vestibulum nec luctus odio. </p>
-            <p class="horaires descriptionCours"><strong>Lundi et vendredi : 18h-20h</strong></p>
-            <button class="buttonCard">Contactez-nous</button>
+            <p class="horaires descriptionCours"><strong>Jeudi : 18h-20h</strong></p>
+            <a href="#containerContact"><button class="buttonCard">Contactez-nous</button></a>
           </div>
           <div class="cardNosCours">
-            <h3>Modèle vivant</h3>
+            <h3>Bande dessinée</h3>
             <div class="imageCardTrois"></div>
             <p class="descriptionCours">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius sapien at pulvinar iaculis. Vestibulum nec luctus odio. </p>
-            <p class="horaires descriptionCours"><strong>Lundi et vendredi : 18h-20h</strong></p>
-            <button class="buttonCard">Contactez-nous</button>
+            <p class="horaires descriptionCours"><strong>Mercredi : 17h-19h</strong></p>
+            <a href="#containerContact"><button class="buttonCard">Contactez-nous</button></a>
           </div>
         </div>	
       </section>
-      <section class="nosEnseignants">
+      <section class="nosEnseignants" id="notreEquipe">
         <h2>Nos Enseignants</h2>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius sapien at pulvinar iaculis. Vestibulum nec luctus odio. </p>
+        <p class="description" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius sapien at pulvinar iaculis. Vestibulum nec luctus odio. </p>
       </section>
-      <section class="nosEnseignantsDeux">
-        <div class="containerEnseignants">
+      <section class="nosEnseignantsDeux" >
+        <div class="containerEnseignants" >
           <div class="enseignantsCards enseignantsAlignement">
             <img src="img/marvin.png"/>
             <div class="descriptionEnseignants">
-              <h3>Loic</h3>
+              <h3>Marvin</h3>
               <p class="descriptionCours titre"><strong>Professeur de modèle vivant</strong></p>
               <p class="descriptionCours">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius sapien at pulvinar iaculis. Vestibulum nec luctus odio.</p>
               <p class="descriptionCours">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <button class="buttonCard">Découvrez nos cours</button>
+              <a href="#nosCours">
+                <button class="buttonCard"> Découvrez nos cours</button>
+              </a>
             </div>  
           </div>
           <div class="enseignantsCards enseignantsAlignement">
             <img src="img/ananda.png"/>
             <div class="descriptionEnseignants">
-              <h3>Loic</h3>
-              <p class="descriptionCours titre"><strong>Professeur de modèle vivant</strong></p>
+              <h3>Ananda</h3>
+              <p class="descriptionCours titre"><strong>Professeure de bande dessinée</strong></p>
               <p class="descriptionCours">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius sapien at pulvinar iaculis. Vestibulum nec luctus odio.</p>
               <p class="descriptionCours">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <button class="buttonCard">Découvrez nos cours</button>
+              <a href="#nosCours">
+                <button class="buttonCard"> Découvrez nos cours</button>
+              </a>
             </div>  
           </div>
           <div class="enseignantsCards enseignantsAlignement">
             <img src="img/emma.png"/>
             <div class="descriptionEnseignants">
-              <h3>Loic</h3>
-              <p class="descriptionCours titre"><strong>Professeur de modèle vivant</strong></p>
+              <h3>Emma</h3>
+              <p class="descriptionCours titre"><strong>Professeure d'illustration</strong></p>
               <p class="descriptionCours">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius sapien at pulvinar iaculis. Vestibulum nec luctus odio.</p>
               <p class="descriptionCours">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <button class="buttonCard">Découvrez nos cours</button>
+              <a href="#nosCours">
+                <button class="buttonCard"> Découvrez nos cours</button>
+              </a>
             </div>  
           </div>
         </div>
-        <h2>Nos tarifs</h2>
+        <h2 id="tarifs">Nos tarifs</h2>
       </section>
-      <section class="nosTarifs">
+      <section class="nosTarifs" >
         <div class="containerNosTarifs">
           <div class="nosTarifsCards nosTarifsCardsFlex ">
             <div class="nomForfaitTarifs">
@@ -171,75 +178,75 @@
                   <span class="material-symbols-outlined">
                     calendar_month
                     </span>
-                  <p>Valables 5 semaines</p>
+                  <p>Valable 5 semaines</p>
                 </div>
               </div> 
             </div>
           </div>
           <div class="nosTarifsCards nosTarifsCardsFlex nosTarifsCardsDeux ">
             <div class="nomForfaitTarifs">
-              <h4>Découverte</h4>
-              <p>Initiation</p>
+              <h4>Forfait annuel</h4>
+              <p>Flexibilité</p>
             </div>
             <div class="basCards">
               <div class="prixTarifs">
-                <p>10€</p>
-                <p>de l'heure</p>
+                <p>100€</p>
+                <p>par mois</p>
               </div>
               <div class="descriptionTarifs descriptionTarifsFlex">
                 <div class="iconesTarifs">
                   <span class="material-symbols-outlined">
                     schedule
                   </span>
-                  <p>15 heures de cours</p>
+                  <p>90 heures de cours</p>
                 </div>
                 <div class="traitTarifs"></div>
                 <div class="iconesTarifs">
                   <span class="material-symbols-outlined">
                     edit
                     </span>
-                  <p>5 cours</p>
+                  <p>30 cours</p>
                 </div>
                 <div class="traitTarifs"></div>
                 <div class="iconesTarifs">
                   <span class="material-symbols-outlined">
                     calendar_month
                     </span>
-                  <p>Valables 5 semaines</p>
+                  <p>Valable de sept. à juin</p>
                 </div>
               </div> 
             </div>
           </div>
           <div class="nosTarifsCards nosTarifsCardsFlex ">
             <div class="nomForfaitTarifs">
-              <h4>Découverte</h4>
-              <p>Initiation</p>
+              <h4>À l'unité</h4>
+              <p>Liberté</p>
             </div>
             <div class="basCards">
               <div class="prixTarifs">
-                <p>10€</p>
-                <p>de l'heure</p>
+                <p>50€</p>
+                <p>en une fois</p>
               </div>
               <div class="descriptionTarifs descriptionTarifsFlex">
                 <div class="iconesTarifs">
                   <span class="material-symbols-outlined">
                     schedule
                   </span>
-                  <p>15 heures de cours</p>
+                  <p>3 heures de cours</p>
                 </div>
                 <div class="traitTarifs"></div>
                 <div class="iconesTarifs">
                   <span class="material-symbols-outlined">
                     edit
                     </span>
-                  <p>5 cours</p>
+                  <p>1 cours</p>
                 </div>
                 <div class="traitTarifs"></div>
                 <div class="iconesTarifs">
                   <span class="material-symbols-outlined">
                     calendar_month
                     </span>
-                  <p>Valables 5 semaines</p>
+                  <p>Valables le jour même</p>
                 </div>
               </div> 
             </div>
@@ -248,7 +255,7 @@
         </div>
       </section>
       <section class="contactezNous">
-        <div class="containerContact">
+        <div class="containerContact" id="containerContact">
           <h2>Contactez-Nous</h2>
           <div class="crayons crayonsFlex">
             <img src="img/crayon1.png" alt="#"/>
@@ -271,7 +278,9 @@
                 <textarea name="message" id="message" placeholder="Votre message"></textarea>
               </p>
               <p class="boutonE">
-                <input class="boutonEnvoyer" type="submit" value="Envoyer"/>
+                <a href="#logo">
+                  <input class="boutonEnvoyer" value="Envoyer"/>
+                </a>
               </p>
             </form>
             <img src="img/crayon2.png" alt="#"/>
@@ -297,10 +306,10 @@
         </div>
         <div class="planFooter">
           <h4>Plan du site</h4>
-          <p><a href="#">Accueil</a></p>
-          <p><a href="#">Nos cours</a></p>
-          <p><a href="#">Nos tarifs</a></p>
-          <p><a href="#">Contactez-Nous</a></p>
+          <p><a href="#logo">Accueil</a></p>
+          <p><a href="#nosCours">Nos cours</a></p>
+          <p><a href="#tarifs">Nos tarifs</a></p>
+          <p><a href="#containerContact">Contactez-Nous</a></p>
         </div>
         <div class="reseauxFooter">
 		      <h4>Suivez-nous sur les réseaux</h4>

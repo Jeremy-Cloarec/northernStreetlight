@@ -129,7 +129,7 @@ nav{
     background-color: #7D1515;
 }
 
-.decouvrezNosCours a{
+.decouvrezNosCours {
     font-size:25px;
     color: white;
 }
@@ -208,8 +208,8 @@ p{
 	display: grid;
 	grid-template:auto auto auto auto auto/auto;
 	row-gap:15px; 
-	padding: 25px;
-	border-radius: 30px;
+	padding: 18px;
+	border-radius: 40px;
 	box-shadow: 0px 4px 16px rgba(26, 26, 26, 0.16);
 }
 
@@ -236,6 +236,12 @@ h3{
 	transition : 0.3s;
 	padding: 10px 0;
 	font-weight: 600;
+	width: 100%;
+	cursor: pointer;
+}
+
+.buttonCard a{
+	color: white;
 }
 
 .buttonCard:hover{
@@ -330,8 +336,8 @@ h3{
 	grid-template:auto /auto;
 	row-gap:15px; 
 	background-color: white;
-	padding: 30px;
-	border-radius: 50px;
+	padding: 18px;
+	border-radius: 40px;
 	box-shadow: 0px 4px 16px rgba(26, 26, 26, 0.16);
 	
 }
@@ -400,12 +406,12 @@ h3{
 .nomForfaitTarifs{
 	background-color: #FFE4E4;
 	padding: 20px 0;
-	border-radius: 50px 50px 0 0;
+	border-radius: 40px 40px 0 0;
 }
 
 .basCards{
-	padding: 15px 30px 30px 30px;
-	border-radius: 0 0 50px 50px;
+	padding: 20px;
+	border-radius: 0 0 40px 40px;
 }
 
 .nomForfaitTarifs > p,h4 {
@@ -537,6 +543,7 @@ input.boutonEnvoyer{
 	background-color:#D72424;
 	border: none;
 	outline: none;
+	cursor: pointer;
 }
 .boutonEnvoyer:hover{
 	background-color:#7D1515;
@@ -626,16 +633,52 @@ footer h4{
 
 /* RESPONSIVE TABLETTE*/
 
-@media screen and (min-width:520px) and (max-width:980px) {
+@media screen and (min-width:520px) and (max-width:1060px) {
 	
-	
+	.titreH1 h1{
+		font-size:48px;
+	}
+
+	h2{
+		font-size: 32px;
+	}
+
+	h3{
+		font-size: 23px;
+	}
+	.cardNosCours h3{
+	font-size: 23px;
+}
+	p{
+		font-size: 18px;
+	}
+
+	.nosValeurs{
+		max-width: 650px;
+		margin:auto;
+	}
+
+	.decouvrezNosCours {
+		font-size: 18px;
+		color: white;
+		cursor: pointer;
+	}
+
+	.descriptionCours{
+		font-size: 14px;
+	}
 	.nosEnseignants{
 		padding-bottom:25%;
 	}
+	.nosEnseignantsDeux{
+		background-color: white;
+	}
+
+	
 	.containerEnseignants{
 		grid-template: repeat(3,1fr)/1fr;
 		row-gap: 5%;
-		bottom:160px;
+		bottom:178px;
 	}
 
 	.enseignantsCards{
@@ -647,6 +690,10 @@ footer h4{
 	.enseignantsCards img{
 		margin-right: 5%;
 	}
+
+
+
+
 
 	/* BURGER TABLETTE */
 	nav{
@@ -724,10 +771,53 @@ footer h4{
 	#burger:checked~.menu-icon .navigationIcon:nth-child(2) {
 	background-color: transparent;
 	}
+
+	.contactezNous{
+		margin-bottom: 80px;
+	}
+	.contactezNous h2{
+		margin-bottom: 40px;
+	}
+
+	.crayonsFlex{
+		flex-direction: column;
+		align-items: center;
+	}
+	.crayonsFlex img{
+		display: none;
+	}
+
+	.formulaire{
+		margin: 0;
+		width: 100%;
+		padding: px 0;
+	}
+
+
+
+
+
+	.formulaire input{
+		font-size: 16px;
+	}
+	.formulaire textarea {
+		font-size: 16px;
+	}
+	fieldset{
+		flex-direction: column;
+	}
+
+	.nomPrenom p:last-child{
+		margin: 0;
+	}
+
+	.boutonE{
+		width: 100%;
+	}
 	
 }
 
-/* TABLETTE RESPONSIVE CARSD */
+/* TABLETTE RESPONSIVE CARD */
 
 @media screen and (min-width:520px) and (max-width:900px){
 	.containerCard{
@@ -735,7 +825,14 @@ footer h4{
 		row-gap: 35px;
 	}
 
+	.containerNosTarifs{
+		grid-template-columns: 1fr;
+		row-gap: 35px;
+	}
+
 }
+
+
 
 
 
@@ -792,15 +889,21 @@ footer h4{
 	.titreH1{
 		width: 100%;
 	}
+
+	a.decouvrez{
+		width: 100%;
+	}
 	
-	.decouvrezNosCours{
+	.decouvrezNosCours a{
 		margin-top:38px;
 		padding:13px 0 13px 0; 
 		width: 100%;
+
 	}
 
-	.decouvrezNosCours a{
+	.decouvrezNosCours {
 		font-size: 16px;
+		width: 100%;
 	}
 
 	.souriePicto{
