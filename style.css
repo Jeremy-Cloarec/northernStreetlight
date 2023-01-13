@@ -428,8 +428,16 @@ h3{
 .iconesTarifs{
 	display: flex;
 	align-items:center;
-	margin-bottom: 15px;
 }
+
+.iconesTarifs:last-child{
+	display: flex;
+	align-items:center;
+	margin-bottom: 12px;
+}
+
+
+
 .iconesTarifs p{
 	margin-left: 10px;
 }
